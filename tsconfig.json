@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "ES2015",
+        "moduleResolution": "node",
+        "strict": true,
+        "strictNullChecks": true,
+        "lib": ["ES2015", "DOM"],
+        "sourceMap": true,
+        "esModuleInterop": true
+    }
+}

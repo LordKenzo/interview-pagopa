@@ -1,0 +1,35 @@
+POST http://localhost:3000/message
+Content-Type: application/json
+
+{
+    "content": {
+        "subject": "0123456789",
+        "markdown": "01234567890123456789012345678901234567890123456789012345678901234567890123456789"
+    },
+    "fiscal_code": "AAAAAA00A00A000A"
+}
+
+###
+
+POST http://localhost:3000/profile
+Content-Type: application/json
+
+{
+    "fiscal_code": ""
+}
+
+###
+
+GET http://localhost:3000/message
+
+###
+POST http://localhost:3000/message
+Content-Type: application/json
+
+{
+    "content": {
+        "subject": "0123456789",
+        "markdown": "01234567890123456789012345678901234567890123456789012345678901234567890123456789"
+    },
+    "fiscal_code": "cAAAAA00A00A000A"
+}

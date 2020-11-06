@@ -1,0 +1,45 @@
+{
+  "name": "interview-pagopa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --no-cache",
+    "test:watch": "jest --watchAll --no-cache",
+    "build": "concurrently \"npm run build:client\" \"npm run build:server\" ",
+    "build:client": "webpack --config webpack.client.js",
+    "build:server": "webpack --config webpack.server.js",
+    "start": "concurrently \"npm run client\" \"npm run server\" ",
+    "server": "cross-env NODE_ENV=development ts-node server/src/index.ts",
+    "client": "cross-env NODE_ENV=development webpack serve --config webpack.client.js",
+    "watch": "nodemon"
+  },
+  "keywords": [],
+  "author": "Lorenzo Franceschini <l.franceschini@gmail.com>",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "concurrently": "^5.3.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^5.0.1",
+    "dotenv": "^8.2.0",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^4.5.0",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6",
+    "style-loader": "^2.0.0",
+    "ts-jest": "^26.4.3",
+    "ts-loader": "^8.0.9",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@types/toastr": "^2.1.38",
+    "axios": "^0.21.0",
+    "toastr": "^2.1.4"
+  }
+}
