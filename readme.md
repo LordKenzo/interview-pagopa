@@ -1,16 +1,16 @@
 # Project for a Job Interview
 
-This is my proposal for a job interview. I choose to try TypeScript and NodeJS to develop my solution to the task that they have assigned to me. I don't covered every lines of my code with Jest, I need to improve a lot my skill in this field, of course I need to improve a lot of my programming skills.
+This is my proposal for a job interview. I choose to try **TypeScript** and **NodeJS** to develop my solution. 
 
-The project is a NodeJS server writter in TypeScript and it acts like a proxy behind my client side and the IO Rest API Server.
+The project is a NodeJS Server written in TypeScript, without any kind of library or framework like ExpressJS, and it acts like a proxy behind my client-side and the IO Rest API Server.
 
-Thank you to read and try the project.
 
 ## Environemnt API KEY
 
-Before you run the project, two word on API KEY...
+Before you run the project, I'd like to spend my two cents on API KEY...
 
-To run the server project you need a valid API KEY. Insert inside a `.env` file inside the `root` folder of the project:
+To run the server project you need a valid API KEY (hope I didn't commit with the source 🤣). 
+Insert it inside a `.env` file inside the `root` folder of the project:
 
 ```
 APISECRET = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -47,9 +47,12 @@ To run both just type `npm start`, thank to `concurrently`.
 
 The server will start as a `Webpack Dev Serve`, if you want to run your web server, please make the `build` first to have a `dist` folder.
 
-Don't forget to insert you API KEY and if you change the default `3000` port, please change it on the client side. At the time of writing this documentation, it's hardcoded (😢) in the `FormController`!!!
+Don't forget to insert your API KEY and if you change the default `3000` port, please change it on the client side. At the time of writing this documentation, it's hardcoded (😢) in the `FormController`!!!
 
-To build both `dist` folder for client and server you can run `npm run build` and run something like `live-server` for the client, inside the `dist client` folder and run `node server` inside `dist server` folder.
+To build both `dist` folder for client and server you can run `npm run build` and:
+
+* run something like `live-server` for the client
+* run `node server` inside `dist server` folder.
 
 ## The Server
 
@@ -74,7 +77,7 @@ This is the UI part that I used to check my work. It's just a form, with Toastr 
 
 ## Jest Test
 
-To run test for both server and client side just run: `npm test`. I know, I'm very low skilled in testing software ( ´･･)ﾉ(._.`)
+To run test for both server and client side just run: `npm test`. I know, I'm very low skilled in testing ( ´･･)ﾉ(._.`)
 
 The project comes with a `launch.json` for VSCode so you can debug inside the IDE for both NodeJS and Jest Test.
-In this way, can add your breakpoint on your code and on your tests file. Open Debug, Play your `Jest Current File` config and Enjoy debugging 😜
+In this way, can add your breakpoint on your code and on your tests file. Open Debug, Play your `Jest Current File` config and enjoy debugging 😜
