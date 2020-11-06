@@ -1,15 +1,23 @@
+# Project for a Job Interview
+
+This is my proposal for a job interview. I choose to try TypeScript and NodeJS to develop my solution to the task that they have assigned to me. I don't covered any lines of my code with Jest, I need to improve a lot my skill in this field, of course I need to improve a lot of my programming skills.
+
+Thank you to read and try the project.
+
 ## Environemnt API KEY
 
-To run the server project you need a valid API KEY. Insert inside a `.env` file inside the `root` folder:
+Before you run the project, two word on API KEY...
+
+To run the server project you need a valid API KEY. Insert inside a `.env` file inside the `root` folder of the project:
 
 ```
 APISECRET = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 APIFAKEFORTEST = 0123456789
 ```
 
-The `APIFAKEFORTEST` it's just for Jest and testing purpose 🤦‍♂️
+The `APIFAKEFORTEST` it's just for Jest and testing purpose 🤦‍♂️ (I used it to check if I was able to read it...)
 
-If you run the built project you need to set you env variable in your operating system.
+If you run the built project (the file inside dist folder...) you need to set your "env variable" in your operating system.
 
 
 ## Run the project
@@ -38,6 +46,8 @@ To run both just type `npm start`, thank to `concurrently`.
 The server will start as a `Webpack Dev Serve`, if you want to run your web server, please make the `build` first to have a `dist` folder.
 
 Don't forget to insert you API KEY and if you change the default `3000` port, please change it on the client side. At the time of writing this documentation, it's hardcoded (😢) in the `FormController`!!!
+
+To build both `dist` folder for client and server you can run `npm run build` and run something like `live-server` for the client, inside the `dist client` folder and run `node server` inside `dist server` folder.
 
 ## The Server
 
