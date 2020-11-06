@@ -1,6 +1,8 @@
 # Project for a Job Interview
 
-This is my proposal for a job interview. I choose to try TypeScript and NodeJS to develop my solution to the task that they have assigned to me. I don't covered any lines of my code with Jest, I need to improve a lot my skill in this field, of course I need to improve a lot of my programming skills.
+This is my proposal for a job interview. I choose to try TypeScript and NodeJS to develop my solution to the task that they have assigned to me. I don't covered every lines of my code with Jest, I need to improve a lot my skill in this field, of course I need to improve a lot of my programming skills.
+
+The project is a NodeJS server writter in TypeScript and it acts like a proxy behind my client side and the IO Rest API Server.
 
 Thank you to read and try the project.
 
